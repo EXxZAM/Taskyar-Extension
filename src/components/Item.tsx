@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { useTasks } from "../../contexts/TaskContext";
+import { useTasks } from "../contexts/TaskContext";
 interface ItemsProps {
     task: string;
     label: string;
@@ -43,18 +43,21 @@ export const Item = ({
                         </div>
                         <div>
                             {labels[0] !== "" &&
-                                labels.map((label_item: string) => {
-                                    return (
-                                        <span
-                                            className="tag tag-color tag-sm"
-                                            style={{
-                                                backgroundColor: `${priority}`,
-                                            }}
-                                        >
-                                            {label_item}
-                                        </span>
-                                    );
-                                })}
+                                labels.map(
+                                    (label_item: string, index: number) => {
+                                        return (
+                                            <span
+                                                key={index}
+                                                className="tag tag-color tag-sm"
+                                                style={{
+                                                    backgroundColor: `${priority}`,
+                                                }}
+                                            >
+                                                {label_item}
+                                            </span>
+                                        );
+                                    }
+                                )}
                         </div>
                     </div>
 
@@ -91,18 +94,21 @@ export const Item = ({
                         </div>
                         <div>
                             {labels[0] !== "" &&
-                                labels.map((label_item: string) => {
-                                    return (
-                                        <span
-                                            className="tag tag-color tag-sm"
-                                            style={{
-                                                backgroundColor: `${priority}`,
-                                            }}
-                                        >
-                                            {label_item}
-                                        </span>
-                                    );
-                                })}
+                                labels.map(
+                                    (label_item: string, index: number) => {
+                                        return (
+                                            <span
+                                                key={index}
+                                                className="tag tag-color tag-sm"
+                                                style={{
+                                                    backgroundColor: `${priority}`,
+                                                }}
+                                            >
+                                                {label_item}
+                                            </span>
+                                        );
+                                    }
+                                )}
                         </div>
                     </div>
 

@@ -3,8 +3,8 @@ import { useEffect, useRef } from "react";
 import styled from "styled-components";
 import { useTasks } from "../contexts/TaskContext";
 import { useTheme } from "../contexts/ThemeContext";
-import { Item } from "./taskManager/Item";
-import { ToDoList } from "./taskManager/ToDoList";
+import { Item } from "./Item";
+import TaskForm from "./TaskForm";
 
 function TodoPanel() {
     const { updateTheme, theme }: any = useTheme();
@@ -13,7 +13,7 @@ function TodoPanel() {
 
     tasks &&
         tasks.sort(
-            (a: { is_completed: any }, b: { is_completed: any }) =>
+            (a: { is_completed: boolean }, b: { is_completed: boolean }) =>
                 Number(a.is_completed) - Number(b.is_completed)
         );
 
@@ -26,7 +26,7 @@ function TodoPanel() {
             <div className="top">
                 <div className="header">
                     <h2>Taskyar</h2>
-                    <label className="switch setting " id="switch">
+                    <label className="switch setting" id="switch">
                         {theme === "Light" ? (
                             <input
                                 type="checkbox"
@@ -40,7 +40,7 @@ function TodoPanel() {
                             />
                         )}
 
-                        <span className="slider  round "></span>
+                        <span className="slider round"></span>
                     </label>
                 </div>
 
@@ -64,7 +64,7 @@ function TodoPanel() {
                 </ul>
             </div>
             <div>
-                <ToDoList />
+                <TaskForm />
                 <div className="footer">
                     <p style={{ marginRight: "5px" }}>Made By</p>
                     <a
