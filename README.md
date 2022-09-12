@@ -20,10 +20,9 @@ download the zip file containing the latest version from [Releases](https://gith
 
 ### Source code
 
-download or clone this repo
-run
+download or clone this repo then run
 `npm install`
-then
+and in order to host it on your computer, run
 `npm start`
 
 ## Contact
