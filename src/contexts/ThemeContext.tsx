@@ -10,8 +10,6 @@ export const ThemeProvider = ({ children }: any) => {
     const [theme, setTheme] = useLocalStorage("THEME", "Dark");
 
     const updateTheme = () => {
-        const items = localStorage.getItem("THEME");
-        if (items == null) return;
         if (theme === "Dark") {
             localStorage.setItem("THEME", "Light");
             setTheme("Light");
