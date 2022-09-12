@@ -12,6 +12,20 @@ Taskyar was build using React and Typescript.
 -   ![Typescript][typescript]
 -   [![React][react.js]][react-url]
 
+### Usage
+
+### Github Release
+
+download the zip file containing the latest version from [Releases](https://github.com/EXxZAM/Taskyar-Extention/releases/tag/v1.0.0)
+
+### Source code
+
+download or clone this repo
+run
+`npm install`
+then
+`npm start`
+
 ## Contact
 
 Mahdi Olamaei - [@exxzam](https://t.me/exxzam) - mahdiolamaei@proton.me
