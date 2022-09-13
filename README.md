@@ -17,7 +17,7 @@ Taskyar was build using React and Typescript.
 
 Mahdi Olamaei - [@exxzam](https://t.me/exxzam) - mahdiolamaei@proton.me
 
-Project Link: [https://github.com/EXxZAM/Taskyar-Extention](https://github.com/EXxZAM/Taskyar-Extention)
+Project Link: [https://github.com/EXxZAM/Taskyar-Extension](https://github.com/EXxZAM/Taskyar-Extension)
 
 ## Acknowledgments
 
